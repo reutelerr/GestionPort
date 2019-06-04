@@ -50,7 +50,8 @@ struct Bateau
     union DetailsBateau details;
 };
 
-typedef struct Bateau port[CAPACITE];
+typedef struct Bateau Port[CAPACITE];
+Port port;
 
 struct Bateau saisirBateau(void)
 {
@@ -100,6 +101,19 @@ struct Bateau saisirBateau(void)
             
     }
     return bateau;
+}
+
+bool placerBateau(struct Bateau bateau)
+{
+    for (unsigned i=0; i<CAPACITE; ++i)
+    {
+        if(port + i == NULL)
+        {
+            port[i] = bateau;
+            return true;
+        }
+    }
+    return false;
 }
 
 
