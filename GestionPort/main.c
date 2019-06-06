@@ -7,8 +7,25 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "gestionPort.h"
+
 
 int main()
 {
-    return 0;
+    Bateau b1 = saisirBateau();
+    Bateau b2 = saisirBateau();
+    placerBateau(&b1);
+    placerBateau(&b2);
+    afficherPlace(0);
+    afficherPort();
+    libererPlace("VD123");
+    afficherPort();
+    afficherDetails("vd123");
+    //    libererPlace("vd123");
+    //    afficherPlace(0);
+    
+    
+    return (EXIT_SUCCESS);
 }
+
