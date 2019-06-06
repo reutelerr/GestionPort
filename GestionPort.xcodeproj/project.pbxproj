@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F419A3922A9442B004819E3 /* gestionPort.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F419A3822A9442B004819E3 /* gestionPort.c */; };
 		2FF8EAE4229D82FE00E788CB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8EAE3229D82FE00E788CB /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F419A3822A9442B004819E3 /* gestionPort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gestionPort.c; sourceTree = "<group>"; };
 		2FF8EAE0229D82FE00E788CB /* GestionPort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GestionPort; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF8EAE3229D82FE00E788CB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2FF8EAEA229D837300E788CB /* gestionPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gestionPort.h; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF8EAEA229D837300E788CB /* gestionPort.h */,
+				2F419A3822A9442B004819E3 /* gestionPort.c */,
 				2FF8EAE3229D82FE00E788CB /* main.c */,
 			);
 			path = GestionPort;
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F419A3922A9442B004819E3 /* gestionPort.c in Sources */,
 				2FF8EAE4229D82FE00E788CB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

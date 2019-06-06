@@ -1,21 +1,22 @@
-//
-//  main.c
-//  GestionPort
-//
-//  Created by Robin Reuteler on 28.05.19.
-//  Copyright © 2019 RobinReuteler. All rights reserved.
-//
+/* ---------------------------
+ Lab : 10
+ File : main.c
+ Author(s) : Yanick Thomann & Robin Reuteler
+ Date : 06.06.2019
+ 
+ Goal : Mettre en oeuvre les structures et les unions
+ --------------------------- */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "gestionPort.h"
 
 
-int main()
+int main(void)
 {
     Bateau b1 = saisirBateau();
-    Bateau b2 = saisirBateau();
     placerBateau(&b1);
+    Bateau b2 = saisirBateau();
     placerBateau(&b2);
     afficherPlace(0);
     afficherPort();
